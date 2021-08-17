@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -13,17 +12,15 @@
 	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FreeHTML5.co" />
 
-  	<!-- 
+  	<!--
 	//////////////////////////////////////////////////////
-
-	FREE HTML5 TEMPLATE 
+	FREE HTML5 TEMPLATE
 	DESIGNED & DEVELOPED by FreeHTML5.co
-		
+
 	Website: 		http://freehtml5.co/
 	Email: 			info@freehtml5.co
 	Twitter: 		http://twitter.com/fh5co
 	Facebook: 		https://www.facebook.com/fh5co
-
 	//////////////////////////////////////////////////////
 	-->
 
@@ -42,7 +39,7 @@
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
-	
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -60,7 +57,371 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<style>
+	#fh5co-main {
+		background-color: #fafafa;
+	}
+	#header {
+		/*border: 2px solid red; */
+		position: relative;
+		height: 100px;
 
+	}
+	#headerContents {
+		margin-top: 2.75%;
+		/*border: 2px solid blue; */
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		height: 80px;
+		width: 68%;
+		transform: translate(-50%, -50%);
+	}
+	#headerContents button {
+		margin-top:0.5%;
+		margin-left: 5%;
+		margin-right: 5%;
+		border: none;
+		background-color: #fafafa;
+		font-size: 25px;
+	}
+	#headerContents button:hover {
+		background-color: #ededed;
+	}
+	#title {
+		font-size: 50px;
+		text-align: center;
+	}
+		* Style The Dropdown Button */
+	.dropbtn {
+	  background-color: #4CAF50;
+	  color: white;
+	  padding: 16px;
+	  font-size: 16px;
+	  border: none;
+	  cursor: pointer;
+	}
+
+	/* The container <div> - needed to position the dropdown content */
+	.dropdown {
+	  position: relative;
+	  display: inline-block;
+	}
+
+	/* Dropdown Content (Hidden by Default) */
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f9f9f9;
+	  min-width: 200px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+
+	/* Links inside the dropdown */
+	.dropdown-content a {
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	}
+
+	/* Change color of dropdown links on hover */
+	.dropdown-content a:hover {background-color: #f1f1f1}
+
+	/* Show the dropdown menu on hover for income */
+	.dropdown:hover #dropdown-content-income {
+	  display: block;
+	}
+	/* Show the dropdown menu on hover for expenses */
+	.dropdown:hover #dropdown-content-expenses {
+		display: block;
+	}
+	/* Change the background color of the dropdown button when the dropdown content is shown */
+	.dropdown:hover .dropbtn {
+	  background-color: #3e8e41;
+  }
+	#optionsIncome {
+		height: 350px;
+		/* border: 2px solid red; */
+	}
+	#optionsExpenses {
+		height: 250px;
+		padding-top: 2%;
+		padding-bottom: 2%;
+	}
+	#tablesIE {
+		position: relative;
+		width: 80%;
+	}
+	table {
+		position: relative;
+	}
+	th, td {
+		width: 800px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-left: 20px;
+		text-align: left;
+	}
+	th {
+
+	}
+	td {
+		background-color: #ededed;
+	}
+	.topRow {
+		color: white;
+	}
+	.subheadings {
+		color: black;
+		background-color: white;
+	}
+	.tableDataDiv {
+		width: 90%;
+		margin-bottom: 50px;
+	}
+	.tableData  {
+		width: 90%;
+	}
+	#incomeTableDiv {
+		/*border: 2px solid blue; - for testing */
+		margin-left: 10%;
+		width: 90%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+	#incomeTable {
+	}
+	#incomeTable .topRow {
+		background-color: orange;
+	}
+	#expensesTableDiv {
+		/*border: 2px solid blue; - for testing */
+		margin-left: 10%;
+		width: 90%;
+	}
+	#expensesTable {
+	}
+	#expensesTable td{
+		height: 50px;
+	}
+	#expensesTable .topRow {
+		background-color: #3471eb;
+	}
+	#expensesTable .subheadings {
+		/* background-color: #c2d0ff; */
+		/*border: 1px solid #adc0ff;  */
+		text-align: left;
+		background-color: #ededed;
+		color: #595959;
+	}
+	.subheadings {
+		background
+	}
+
+	#IncomePiechartByCategory {
+		/*border: 2px solid purple; */
+		margin-top: -50px;
+		display: none;
+		width: 100%;
+	}
+	#IncomeGraphOverTime {
+		margin-top: -10px;
+		display: none;
+		width: 100%;
+		/*border: 2px solid yellow; */
+	}
+
+	#ExpensesPiechartByCategory {
+		border: 2px solid purple;
+		display: none;
+	}
+
+	#ExpectedVSActualCostsGraph {
+		/*border: 2px solid yellow; */
+		margin-top: -10px;
+		display: none;
+		width: 100%;
+	}
+	#LineChartOfAccumulationOfExpenses {
+		border: 2px solid red;
+		display: none;
+	}
+
+	input {
+		display: none;
+	}
+	#OverviewContentDiv {
+		/*border: 2px solid blue; */
+		width: 100%;
+		position: relative;
+		height: 200px;
+	}
+	#OverviewTableContent {
+		position: absolute;
+		margin-left: 50%;
+		width: 30%;
+	}
+	#OverviewTableContent th {
+		width: 10%;
+	}
+	#OverviewTableContent td {
+
+	}
+	.overviewSideColumn {
+			color: black;
+	}
+	.plain {
+
+		color: red;
+	}
+	.overviewLastColumn {
+		width: 2%;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+
+	</style>
+	<script>
+	function incomeOption1() {
+	  var option1 = document.getElementById("incomeTable");
+		var option2 = document.getElementById("IncomePiechartByCategory");
+		var option3 = document.getElementById("IncomeGraphOverTime");
+		option1.style.display = "block";
+		option2.style.display = "none";
+		option3.style.display = "none";
+	}
+	function incomeOption2() {
+		var option1 = document.getElementById("incomeTable");
+		var option2 = document.getElementById("IncomePiechartByCategory");
+		var option3 = document.getElementById("IncomeGraphOverTime");
+		option1.style.display = "none";
+		option2.style.display = "block";
+		option3.style.display = "none";
+	}
+	function incomeOption3() {
+		var option1 = document.getElementById("incomeTable");
+		var option2 = document.getElementById("IncomePiechartByCategory");
+		var option3 = document.getElementById("IncomeGraphOverTime");
+		option1.style.display = "none";
+		option2.style.display = "none";
+		option3.style.display = "block";
+	}
+	function expensesOption1() {
+		var option1 = document.getElementById("expensesTableDiv");
+		var option2 = document.getElementById("ExpensesPiechartByCategory");
+		var option3 = document.getElementById("ExpectedVSActualCostsGraph");
+		var option4 = document.getElementById("LineChartOfAccumulationOfExpenses");
+		option1.style.display = "block";
+		option2.style.display = "none";
+		option3.style.display = "none";
+		option4.style.display = "none";
+	}
+	function expensesOption2() {
+		var option1 = document.getElementById("expensesTableDiv");
+		var option2 = document.getElementById("ExpensesPiechartByCategory");
+		var option3 = document.getElementById("ExpectedVSActualCostsGraph");
+		var option4 = document.getElementById("LineChartOfAccumulationOfExpenses");
+		option1.style.display = "none";
+		option2.style.display = "block";
+		option3.style.display = "none";
+		option4.style.display = "none";
+	}
+	function expensesOption3() {
+		var option1 = document.getElementById("expensesTableDiv");
+		var option2 = document.getElementById("ExpensesPiechartByCategory");
+		var option3 = document.getElementById("ExpectedVSActualCostsGraph");
+		var option4 = document.getElementById("LineChartOfAccumulationOfExpenses");
+		option1.style.display = "none";
+		option2.style.display = "none";
+		option3.style.display = "block";
+		option4.style.display = "none";
+	}
+	function expensesOption4() {
+		var option1 = document.getElementById("expensesTableDiv");
+		var option2 = document.getElementById("ExpensesPiechartByCategory");
+		var option3 = document.getElementById("ExpectedVSActualCostsGraph");
+		var option4 = document.getElementById("LineChartOfAccumulationOfExpenses");
+		option1.style.display = "none";
+		option2.style.display = "none";
+		option3.style.display = "none";
+		option4.style.display = "block";
+	}
+	function editExpectedCosts() {
+		document.getElementById("row1").style.display = "none";
+		document.getElementById("row2").style.display = "none";
+		document.getElementById("row3").style.display = "none";
+		document.getElementById("row4").style.display = "none";
+		document.getElementById("row5").style.display = "none";
+		document.getElementById("row6").style.display = "none";
+		document.getElementById("row1Input").style.display = "inline";
+		document.getElementById("row2Input").style.display = "inline";
+		document.getElementById("row3Input").style.display = "inline";
+		document.getElementById("row4Input").style.display = "inline";
+		document.getElementById("row5Input").style.display = "inline";
+		document.getElementById("row6Input").style.display = "inline";
+	}
+
+	function saveExpectedCosts() {
+
+		document.getElementById("row1").value = document.getElementById("row1Input").value;
+		document.getElementById("row1").innerHTML = "$" + document.getElementById("row1Input").value;
+
+		document.getElementById("row2").value = document.getElementById("row2Input").value;
+		document.getElementById("row2").innerHTML = "$" + document.getElementById("row2Input").value
+
+		document.getElementById("row3").value = document.getElementById("row3Input").value
+		document.getElementById("row3").innerHTML = "$" + document.getElementById("row3Input").value
+
+		document.getElementById("row4").value = document.getElementById("row4Input").value
+		document.getElementById("row4").innerHTML = "$" + document.getElementById("row4Input").value
+
+		document.getElementById("row5").value = document.getElementById("row5Input").value
+		document.getElementById("row5").innerHTML = "$" + document.getElementById("row5Input").value
+
+		document.getElementById("row6").value = document.getElementById("row6Input").value
+		document.getElementById("row6").innerHTML = "$" + document.getElementById("row6Input").value
+
+
+
+		document.getElementById("row1Input").style.display = "none";
+		document.getElementById("row2Input").style.display = "none";
+		document.getElementById("row3Input").style.display = "none";
+		document.getElementById("row4Input").style.display = "none";
+		document.getElementById("row5Input").style.display = "none";
+		document.getElementById("row6Input").style.display = "none";
+
+		document.getElementById("row1").style.display = "inline";
+		document.getElementById("row2").style.display = "inline";
+		document.getElementById("row3").style.display = "inline";
+		document.getElementById("row4").style.display = "inline";
+		document.getElementById("row5").style.display = "inline";
+		document.getElementById("row6").style.display = "inline";
+
+		document.getElementById("total").innerHTML = "$" +
+		toString(
+			toFloat(document.getElementById("row1Input").value) +
+			toFloat(document.getElementById("row2Input").value) +
+			toFloat(document.getElementById("row3Input").value) +
+			toFloat(document.getElementById("row4Input").value) +
+			toFloat(document.getElementById("row5Input").value) +
+			toFloat(document.getElementById("row6Input").value)
+		);
+	}
+	window.onload = function initial() {
+		document.getElementById("row1").innerHTML = "$" + document.getElementById("row1Input").value;
+		document.getElementById("row2").innerHTML = "$" + document.getElementById("row2Input").value;
+		document.getElementById("row3").innerHTML = "$" + document.getElementById("row3Input").value;
+		document.getElementById("row4").innerHTML = "$" + document.getElementById("row4Input").value;
+		document.getElementById("row5").innerHTML = "$" + document.getElementById("row5Input").value;
+		document.getElementById("row6").innerHTML = "$" + document.getElementById("row6Input").value;
+	}
+	</script>
 </head>
 <body>
 <div id="fh5co-page">
@@ -80,7 +441,7 @@
 				<li><a href="loans.html">Loans</a></li>
 				<li><a href="education.html">Education</a></li>
 				<li><a href="faq.html">FAQ</a></li>
-				
+
 			</ul>
 		</nav>
 
@@ -96,123 +457,213 @@
 
 		</aside>
 
+
 		<div id="fh5co-main">
-			<div class="fh5co-narrow-content">
-				<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Portfolio</h2>
+			<div id="header">
+				<div id="headerContents">
+					<button class="fh5co-heading animate-box" data-animate-effect="fadeInLeft" style="float:left;"> < </button>
+					<h1 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft" id="title" style="float:left;"> July 2021 Statistics </h1>
+					<button class="fh5co-heading animate-box" data-animate-effect="fadeInLeft" style="float:left;"> > </button>
+				</div>
+			</div>
+			<div class="fh5co-narrow-content" >
+
 				<div class="row row-bottom-padded-md">
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-1.jpg);">
-							<div class="desc">
-								<h3>Project Name</h3>
-								<span>Illustration</span>
-							</div>
-						</a>
+					<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft" style="display:block;"> EARNINGS </h2>
+					<div class="dropdown">
+					  <button class="dropbtn"> Type of Overview </button>
+					  <div class="dropdown-content" id="dropdown-content-income">
+					    <a href="#" onclick="incomeOption1()" id="incomeOption1"> Table of Details </a>
+					    <a href="#" onclick="incomeOption2()" id="incomeOption2"> Breakdown by Category </a>
+					    <a href="#" onclick="incomeOption3()" id="incomeOption3"> Accumulation of Earnings Over Time </a>
+					  </div>
 					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-2.jpg);">
-							<div class="desc">
-								<h3>Project Name</h3>
-								<span>Brading</span>
-							</div>
-						</a>
+					<div id="optionsIncome">
+						<div class="col-md-3 col-sm-6 col-padding text-center animate-box" class="tableDataDiv" id="incomeTableDiv">
+							<table id="incomeTable" class="tableData">
+								<tr>
+									<th class="topRow"> Type of Income </th>
+									<th class="topRow"> Earnings </th>
+									<th class="topRow"> Date </th>
+								</tr>
+
+								<tr>
+									<td> Freelance Work </td>
+									<td> $2000.00</td>
+									<td> July 1st, 2021 </td>
+								</tr>
+
+								<tr>
+									<td> Paycheck - Week 1</td>
+									<td> $900.00</td>
+									<td> July 2nd, 2021 </td>
+								</tr>
+
+								<tr>
+									<td> Paycheck - Week 2</td>
+									<td> $900.00</td>
+									<td> July 16th, 2021 </td>
+								</tr>
+
+								<tr>
+									<td> Babysitting Katie </td>
+									<td> $300.00</td>
+									<td> July 24th, 2021 </td>
+								</tr>
+
+								<tr>
+									<td> Paycheck - Week 3</td>
+									<td> $900.00</td>
+									<td> July 30th, 2021 </td>
+								</tr>
+
+								<tr>
+									<th style="background-color:#ededed;"> Total </th>
+									<td> $5,000 </td>
+									<td> - </td>
+								</tr>
+							</table>
+						</div>
+						<div id="IncomePiechartByCategory" class="col-md-3 col-sm-6 col-padding text-center animate-box">
+							<h2 style="font-size: 25px; text-align: center; margin-top:0%;"> Income By Category </h2>
+							<img src="images/income_and_expenses_graphs/IncomeByCategoryPiechartVisual.png" alt="piechart of income split by category"
+							style="height:250px;padding-left:5%;">
+							<img src="images/income_and_expenses_graphs/IncomeByCategoryPiechartLegend.png" alt="legend of piechart of income split by category"
+							style="height:250px;padding-left:5%;">
+						</div>
+						<div id="IncomeGraphOverTime" class="col-md-3 col-sm-6 col-padding text-center animate-box">
+							<h2 style="font-size: 25px; text-align: center; margin-top:-5%;"> Accumulation of Income Over Time </h2>
+							<img src="images/income_and_expenses_graphs/incomeLineGraphOverTime.png" alt="line chart of accumulation of income over time"
+							style="height:270px;">
+						</div>
+				</div>
+				</div>
+
+				<div class="row row-bottom-padded-md">
+					<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"> EXPENSES </h2>
+					<div class="dropdown">
+						<button class="dropbtn"> Type of Overview </button>
+						<div class="dropdown-content" id="dropdown-content-expenses">
+							<a href="#" onclick="expensesOption1()" id="expensesOption1"> Table of Details </a>
+							<a href="#" onclick="expensesOption2()" id="expensesOption2"> Breakdown by Category </a>
+							<a href="#" onclick="expensesOption3()" id="expensesOption3"> Expected VS Actual Costs </a>
+							<a href="#" onclick="expensesOption4()" id="expensesOption4"> Accumulation of Expenses Over Time </a>
+						</div>
 					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-3.jpg);">
-							<div class="desc">
-								<h3>Project Name</h3>
-								<span>Illustration</span>
-							</div>
-						</a>
+					<div id="optionsExpenses">
+						<div class="col-md-3 col-sm-6 col-padding text-center animate-box" class="tableDataDiv" id="expensesTableDiv" >
+							<table id="expensesTable" class="tableData">
+								<tr>
+									<th class="topRow" style="width:30%;"> Category </th>
+									<th class="topRow" style="width:40%;"> Expected Cost </th>
+									<th class="topRow" style="width:30%;"> Actual Cost </th>
+								</tr>
+
+								<tr>
+									<th class="subheadings"> Clothing </th>
+									<td><div id="row1"> </div><input type="float" id="row1Input" value="100.00"> </td>
+									<td> $124.00 </td>
+								</tr>
+
+								<tr>
+									<th class="subheadings"> Food </th>
+									<td> <div id="row2"> </div> <input type="float" id="row2Input" value="500.00"></td>
+									<td> $456.15 </td>
+								</tr>
+
+								<tr>
+									<th class="subheadings"> Car </th>
+									<td> <div id="row3"> </div> <input type="float" id="row3Input" value="800.00"></td>
+									<td> $800.00 </td>
+								</tr>
+								<tr>
+									<th class="subheadings"> Rent </th>
+									<td> <div id="row4"> </div> <input type="float" id="row4Input" value="1000.00"></td>
+									<td> $1000.00 </td>
+								</tr>
+								<tr>
+									<th class="subheadings"> Cable </th>
+									<td> <div id="row5"> </div> <input type="float" id="row5Input" value="200.00"></td>
+									<td> $200.00 </td>
+								</tr>
+								<tr>
+									<th class="subheadings"> Entertainment </th>
+									<td> <div id="row6"> </div> <input type="float" id="row6Input" value="50.00"></td>
+									<td> $100 </td>
+								</tr>
+								<tr>
+									<th class="subheadings"> Total </th>
+									<td> <div id="total"> $2,650.00 </div>  </td>
+									<td> $2,680.15 </td>
+								</tr>
+							</table>
+							<button onclick="editExpectedCosts()" style="margin-left: -20%;margin-top: 10px;"> EDIT EXPECTED COSTS</button>
+							<button onclick="saveExpectedCosts()" style="margin-top: 10px;"> SAVE </button>
+						</div>
+
+						<div id="ExpensesPiechartByCategory">
+						</div>
+						<div id="ExpectedVSActualCostsGraph" class="col-md-3 col-sm-6 col-padding text-center animate-box" style="margin-top: 3.5%; margin-bottom:6%">
+							<h2 style="font-size: 25px; text-align: center; margin-top:-5%;"> Expected Expenses VS Actual Expenses </h2>
+							<img src="images/income_and_expenses_graphs/expectedVSActualExpenses.png" alt="bar chart of expected expenses VS actual expenses"
+							style="height:300px;">
+						</div>
+						<div id="LineChartOfAccumulationOfExpenses">
+						</div>
 					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-4.jpg);">
-							<div class="desc">
-								<h3>Project Name</h3>
-								<span>Illustration</span>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-5.jpg);">
-							<div class="desc">
-								<h3>Project Name</h3>
-								<span>Brading</span>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-6.jpg);">
-							<div class="desc">
-								<h3>Project Name</h3>
-								<span>Illustration</span>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-1.jpg);">
-							<div class="desc">
-								<h3>Project Name</h3>
-								<span>Illustration</span>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-2.jpg);">
-							<div class="desc">
-								<h3>Project Name</h3>
-								<span>Brading</span>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-1.jpg);">
-							<div class="desc">
-								<h3>Project Name</h3>
-								<span>Illustration</span>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-2.jpg);">
-							<div class="desc">
-								<h3>Project Name</h3>
-								<span>Brading</span>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-3.jpg);">
-							<div class="desc">
-								<h3>Project Name</h3>
-								<span>Illustration</span>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-4.jpg);">
-							<div class="desc">
-								<h3>Project Name</h3>
-								<span>Illustration</span>
-							</div>
-						</a>
+				</div>
+				<div class="row row-bottom-padded-md">
+					<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"> Overview </h2>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box" id="OverviewContentDiv">
+						<table id="OverviewTableContent">
+							<tr>
+								<th class="overviewSideColumn"> Total Earnings: </th>
+								<td class="plain" style="width: 1%;"> </td>
+								<td class="overviewLastColumn"> $5,000.00 </td>
+							</tr>
+
+							<tr>
+								<th class="overviewSideColumn" > Total Expenses: </th>
+								<td class="plain" style="width: 1%;"> – </td>
+								<td class="overviewLastColumn"> $2,680.15</td>
+							</tr>
+
+							<tr style="height: 5px;">
+								<th class="plain" > </th>
+								<td class="plain" style="width: 1%;"> </td>
+								<td class="plain" class="overviewLastColumn"> ––––––– </td>
+							</tr>
+
+							<tr>
+								<th class="overviewSideColumn" > Net Savings for July: </th>
+								<td class="plain" style="width: 1%;"> </td>
+								<td class="overviewLastColumn"> $2319.85</td>
+							</tr>
+
+						</table>
 					</div>
 				</div>
 			</div>
-		
+
 			<div class="fh5co-narrow-content">
+				<!--
 				<div class="row">
 					<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
 						<h1 class="fh5co-heading-colored">Get in touch</h1>
 					</div>
 				</div>
 				<div class="row">
+
 					<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
 						<p class="fh5co-lead">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
 						<p><a href="#" class="btn btn-primary">Learn More</a></p>
 					</div>
-					
+
 				</div>
+				-->
 			</div>
+
+
 		</div>
 	</div>
 
@@ -226,11 +677,10 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Flexslider -->
 	<script src="js/jquery.flexslider-min.js"></script>
-	
-	
+
+
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
 
 	</body>
 </html>
-
