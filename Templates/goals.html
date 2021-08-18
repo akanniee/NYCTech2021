@@ -7,7 +7,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Marble &mdash; Free HTML5 Bootstrap Website Template by FreeHTML5.co</title>
+	<title>EduFinance &mdash; Goals</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
@@ -60,8 +60,104 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
+	<style>
+	.btn_start { 
+		background-color: #43e76c;
+		  border: none;
+		  padding: 10px;
+		width: 200px;
+		border-radius:3px;
+		box-shadow: 1px 5px 20px -5px rgba(255, 255, 255, 0.4);
+		  color: rgb(243, 237, 237);
+		margin-top: 10px;
+		cursor: pointer;
+		}
+	</style>
+	<style>
+        * {box-sizing: border-box;}
+        ul {list-style-type: none;}
+        body {font-family: Verdana, sans-serif;}
+        
+        .month {
+          padding: 70px 25px;
+          width: 100%;
+          background: #1abc9c;
+          text-align: center;
+        }
+        
+        .month ul {
+          margin: 0;
+          padding: 0;
+        }
+        
+        .month ul li {
+          color: white;
+          font-size: 20px;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+        }
+        
+        .month .prev {
+          float: left;
+          padding-top: 10px;
+        }
+        
+        .month .next {
+          float: right;
+          padding-top: 10px;
+        }
+        
+        .weekdays {
+          margin: 0;
+          padding: 10px 0;
+          background-color: #ddd;
+        }
+        
+        .weekdays li {
+          display: inline-block;
+          width: 13.6%;
+          color: #666;
+          text-align: center;
+        }
+        
+        .days {
+          padding: 10px 0;
+          background: #eee;
+          margin: 0;
+        }
+        
+        .days li {
+          list-style-type: none;
+          display: inline-block;
+          width: 13.6%;
+          text-align: center;
+          margin-bottom: 5px;
+          font-size:12px;
+          color: #777;
+        }
+        
+        .days li .active {
+          padding: 5px;
+          background: #1abc9c;
+          color: white !important
+        }
+        
+        /* Add media queries for smaller screens */
+        @media screen and (max-width:720px) {
+          .weekdays li, .days li {width: 13.1%;}
+        }
+        
+        @media screen and (max-width: 420px) {
+          .weekdays li, .days li {width: 12.5%;}
+          .days li .active {padding: 2px;}
+        }
+        
+        @media screen and (max-width: 290px) {
+          .weekdays li, .days li {width: 12.2%;}
+        }
+        </style>
 </head>
+
 <body>
 <div id="fh5co-page">
 	<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
@@ -98,19 +194,160 @@
 
 		<div id="fh5co-main">
 			<div class="fh5co-narrow-content">
-				<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Credit Cards</h2>
+				<center><h2 style="color:#468E66">Goals</h2></center>
 				<div class="jumbotron  animate-box" data-animate-effect="fadeInLeft">
 					<div style="margin: 0px 0px 15px 15px;">
-						<center><h2 style="color:#468E66">Goal</h2></center>
-						<p class="fs-4" style="color: black ;"> 
+						
+						<p style="color: rgba(0, 0, 0, 0.521) ;"> 
 								Knowing what you are saving for can help you reach your goals faster. You will also get an 
 								estimate on how much you should save. <br><br> With our website, You can personalized goals with names, pictures, and target amounts
 							</p>
-							<center><button type="button" onclick="alert('Hello world!')">Get Started</button></center>
+							<br><br>
+							
+
+<form action="/action_page.php">
+  <label for="fname">Target Name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Target Amount:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+ 
+</form>
+<center><h4>Select Target Date</h4></center>
+
+<div class="month">      
+  <ul>
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li>
+      August<br>
+      <span style="font-size:18px">2021</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">  
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li><span class="active">10</span></li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+</ul>
+							<center><button class="btn_start" onclick="myFunction()">Show possible expense adjustments and amounts to be saved each day</button></center>
+							<br>
+							<br>
+							<br>
 					
 					
 					
-					</div>
+					     <h4 style="color:#468E66">Saving Tips and Resources</h4>
+						 <div class="row row-bottom-padded-md">
+							<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+								<a href="https://fetchrewards.com/" 
+								target="_blank" class="work image-popup" style="background-image: url(images/fetch.png);">
+									<div class="desc">
+										<h3>Fetch Rewards</h3>
+										<span>
+											<ul style="list-style-type: none;">
+												<li style="list-style-type: none;">Earn free rewards just by scanning your grocery receipts.</li>
+												<li style="list-style-type: none;">Scan every grocery receipt after you shop, and Fetch Rewards finds you savings</li>
+												
+											</ul>
+										</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+								<a href="https://home.ibotta.com/" target="_blank" class="work image-popup" style="background-image: url(images/ibotta.png);">
+									<div class="desc">
+										<h3>Ibotta</h3>
+										<span><ul style="list-style-type: none;">
+											<li style="list-style-type: none;">With Ibotta, you can earn cash back on in-store, mobile app, and online purchases with receipt submission, linked retailer loyalty accounts, payments, and/or purchase verification.</li>
+											
+										</ul>></span>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+								<a href="https://www.myunidays.com/US/en-US" 
+								target= "_blank" class="work image-popup" style="background-image: url(images/unidays.jpg);">
+									<div class="desc">
+										<h3>UNiDAYS</h3>
+										<span>
+											<ul style="list-style-type: none;">
+												<li style="list-style-type: none;">UNiDAYS is the essential student app that brings you the best deals, content, internships and more from top brands so you can live college life the way you want.</li>
+												
+											</ul>
+										</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+								<a href="https://www.joinhoney.com/?utm_source=goog&utm_medium=sem&utm_campaign=Goog_US_Broad_None_18-65_All_None_Brand_Sitelink_homepage&utm_content=homepage&gclid=Cj0KCQjwvO2IBhCzARIsALw3ASpHTRHMQIJV4wEPZDf-b6R-i8EaveUluooc9qzbueJ2GtHM9OHmK9waAo9gEALw_wcB&from=r" 
+								target= "_blank" class="work image-popup" style="background-image: url(images/honey.jpg);">
+									<div class="desc">
+										<h3>Honey</h3>
+										<span>
+											<ul style="list-style-type: none;">
+												<li style="list-style-type: none;">Honey search for the internet’s best coupons</li>
+												
+											</ul>
+										</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+								<a href="https://cardcookie.com/" 
+								target= "_blank" class="work image-popup" style="background-image: url(images/cardcookie.png);">
+									<div class="desc">
+										<h3>CardCookie</h3>
+										<span>
+											<ul style="list-style-type: none;">
+												<li style="list-style-type: none;">Take advantage and buy other people's unwanted gift cards and codes at a discount. </li>
+												<li style="list-style-type: none;"> Pay less than you would have by paying with discounted cards at your favorite retailer.</li>
+												
+											</ul>
+										</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					
 					
 				</div>
 			</div>
