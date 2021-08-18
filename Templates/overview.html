@@ -103,8 +103,8 @@
 				<!-- <li><a href="home.html">Home</a></li> -->
 				<li><a href="login.html">Login/Sign up</a></li>
 				<li><a href="aboutus.html">About Us</a></li>
-				<li><a href="overview.html">Overview</a></li>
-				<li class="fh5co-active"><a href="creditcards.html">Credit Card Information</a></li>
+                <li class="fh5co-active"><a href="overview.html">Overview</a></li>
+				<li><a href="creditcards.html">Credit Card Information</a></li>
 				<li><a href="expenses_savings.html">Expenses and Savings</a></li>
 				<li><a href="goals.html">Goals</a></li>
 				<li><a href="investing.html">Investing</a></li>
@@ -129,55 +129,46 @@
 
 		<div id="fh5co-main">
 			<div class="fh5co-narrow-content">
-				<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Credit cards</h2>
+
+				<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">July overview</h2>
 				<div class="row row-bottom-padded-md">
-					<h4 style="color:#468E66">Recommended credit cards for you:</h3>
+					
+                    <div id="OverallStatisticsPiechart">
+                        <img src="images/income_and_expenses_graphs/overallStatsPiechart.png" alt="piechart of overall expenses and earnings"
+                        style="height:250px;margin-left:40px;">
+                        <table id="OverviewTableContent">
+							<tr>
+								<th class="overviewSideColumn"> Total Earnings: </th>
+								<td class="plain" style="width: 1%;"> </td>
+								<td class="overviewLastColumn"> $5,000.00 </td>
+							</tr>
 
-						<div class="row row-bottom-padded-md">
-							<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-								<a href="https://www.discover.com/products/student-it.html?sc=RJQS&iq_id=r43700048626791814&cmpgnid=ps-dca-google-brand-it&gclid=EAIaIQobChMIj-b9s46o8gIVlHNvBB1z3wFtEAAYASAAEgIptfD_BwE&gclsrc=aw.ds"
-								target="_blank" class="work image-popup" style="background-image: url(images/discover.jpg);">
-									<div class="desc">
-										<h3>Discover it Student Cash Back</h3>
-										<span>
-											5% cash back<br>
-												No annual fee<br>
-												Free FICO credit score<br>
-												0% APR for 6 months<br>
-										</span>
-									</div>
-								</a>
-							</div>
-							<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-								<a href="https://www.capitalone.com/credit-cards/journey-student/" target="_blank" class="work image-popup" style="background-image: url(images/capital\ one.jpg);">
-									<div class="desc">
-										<h3>Capital One Journey Student Credit Card</h3>
-										<span>
-											No annual fee<br>
-											No foreign transaction fee<br>
-											1% Cash back on all purchases<br>
-										</span>
-									</div>
-								</a>
-							</div>
-							<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-								<a href="https://creditcards.chase.com/a1/freedomflex/affiliates2021g?CELL=6H8X&AFFID=1r4CW8FNFWA-FXt.98vr1cEcgtqXNgum4Q&pvid=41262141805&jp_cmp=cc/871223/aff/3-10003738/na"
-								target= "_blank" class="work image-popup" style="background-image: url(images/chase.jpeg);">
-									<div class="desc">
-										<h3>Chase Freedom Flex</h3>
-										<span>
+							<tr>
+								<th class="overviewSideColumn" > Total Expenses: </th>
+								<td class="plain" style="width: 1%;"> – </td>
+								<td class="overviewLastColumn"> $2,680.15</td>
+							</tr>
 
-											$200 cash back after first $500 spent<br>
-												Free credit score and monitoring<br>
-												5% cash back on activated categories<br>
-												No annual fee<br>
-										</span>
-									</div><br>
-								</a>
-							</div>
-						<br>
+							<tr style="height: 5px;">
+								<th class="plain" > </th>
+								<td class="plain" style="width: 1%;"> </td>
+								<td class="plain" class="overviewLastColumn"> ––––––– </td>
+							</tr>
 
+							<tr>
+								<th class="overviewSideColumn" > Net Savings for July: </th>
+								<td class="plain" style="width: 1%;"> </td>
+								<td class="overviewLastColumn"> $2319.85</td>
+							</tr>
+
+						</table>
+                    </div>
 				</div>
+                <h4>Income</h4>
+                <img src="images/income_and_expenses_graphs/incomeLineGraphOverTime.png" alt="line chart of accumulation of income over time">
+                <br>
+                <br>
+                <br>
 				<h4>Your credit score: <b>710</b></h4><div>
 				<img src ="images/cscore.png"> </div><br>
 				<div id="chartContainer" style="height: 300px; width: 100%;">
