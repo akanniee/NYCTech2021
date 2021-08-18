@@ -143,7 +143,6 @@
   }
 	#optionsIncome {
 		height: 350px;
-		/* border: 2px solid red; */
 	}
 	#optionsExpenses {
 		height: 250px;
@@ -185,7 +184,6 @@
 		width: 90%;
 	}
 	#incomeTableDiv {
-		/*border: 2px solid blue; - for testing */
 		margin-left: 10%;
 		width: 90%;
 		margin-top: 2%;
@@ -197,7 +195,6 @@
 		background-color: orange;
 	}
 	#expensesTableDiv {
-		/*border: 2px solid blue; - for testing */
 		margin-left: 10%;
 		width: 90%;
 	}
@@ -210,8 +207,6 @@
 		background-color: #3471eb;
 	}
 	#expensesTable .subheadings {
-		/* background-color: #c2d0ff; */
-		/*border: 1px solid #adc0ff;  */
 		text-align: left;
 		background-color: #ededed;
 		color: #595959;
@@ -221,7 +216,6 @@
 	}
 
 	#IncomePiechartByCategory {
-		/*border: 2px solid purple; */
 		margin-top: -50px;
 		display: none;
 		width: 100%;
@@ -230,12 +224,12 @@
 		margin-top: -10px;
 		display: none;
 		width: 100%;
-		/*border: 2px solid yellow; */
 	}
 
 	#ExpensesPiechartByCategory {
-		border: 2px solid purple;
+		margin-top: -20px;
 		display: none;
+		width: 100%;
 	}
 
 	#ExpectedVSActualCostsGraph {
@@ -245,15 +239,15 @@
 		width: 100%;
 	}
 	#LineChartOfAccumulationOfExpenses {
-		border: 2px solid red;
+		margin-top: 30px;
 		display: none;
+		width: 100%;
 	}
 
 	input {
 		display: none;
 	}
 	#OverviewContentDiv {
-		/*border: 2px solid blue; */
 		width: 100%;
 		position: relative;
 		height: 200px;
@@ -268,6 +262,10 @@
 	}
 	#OverviewTableContent td {
 
+	}
+	#OverallStatisticsPiechart {
+		margin-top: -20px;
+		position: absolute;
 	}
 	.overviewSideColumn {
 			color: black;
@@ -403,15 +401,13 @@
 		document.getElementById("row5").style.display = "inline";
 		document.getElementById("row6").style.display = "inline";
 
-		document.getElementById("total").innerHTML = "$" +
-		toString(
-			toFloat(document.getElementById("row1Input").value) +
-			toFloat(document.getElementById("row2Input").value) +
-			toFloat(document.getElementById("row3Input").value) +
-			toFloat(document.getElementById("row4Input").value) +
-			toFloat(document.getElementById("row5Input").value) +
-			toFloat(document.getElementById("row6Input").value)
-		);
+		var totalAmount = toFloat(document.getElementById("row1Input").value) +
+					toFloat(document.getElementById("row2Input").value) +
+					toFloat(document.getElementById("row3Input").value) +
+					toFloat(document.getElementById("row4Input").value) +
+					toFloat(document.getElementById("row5Input").value) +
+					toFloat(document.getElementById("row6Input").value);
+		document.getElementById("total").innerHTML = "$" + toString(totalAmount);
 	}
 	window.onload = function initial() {
 		document.getElementById("row1").innerHTML = "$" + document.getElementById("row1Input").value;
@@ -600,21 +596,32 @@
 							<button onclick="editExpectedCosts()" style="margin-left: -20%;margin-top: 10px;"> EDIT EXPECTED COSTS</button>
 							<button onclick="saveExpectedCosts()" style="margin-top: 10px;"> SAVE </button>
 						</div>
-
-						<div id="ExpensesPiechartByCategory">
+						<div id="ExpensesPiechartByCategory" class="col-md-3 col-sm-6 col-padding text-center animate-box">
+							<h2 style="font-size: 25px; text-align: center; margin-top:0%;"> Expenses By Category </h2>
+							<img src="images/income_and_expenses_graphs/expensesByCategoryVisual.png" alt="piechart of expenses split by category"
+							style="height:250px;padding-left:5%;">
+							<img src="images/income_and_expenses_graphs/expensesByCategoryLegend.png" alt="legend of piechart of expenses split by category"
+							style="height:250px;padding-left:5%;">
 						</div>
 						<div id="ExpectedVSActualCostsGraph" class="col-md-3 col-sm-6 col-padding text-center animate-box" style="margin-top: 3.5%; margin-bottom:6%">
 							<h2 style="font-size: 25px; text-align: center; margin-top:-5%;"> Expected Expenses VS Actual Expenses </h2>
 							<img src="images/income_and_expenses_graphs/expectedVSActualExpenses.png" alt="bar chart of expected expenses VS actual expenses"
 							style="height:300px;">
 						</div>
-						<div id="LineChartOfAccumulationOfExpenses">
+						<div id="LineChartOfAccumulationOfExpenses" class="col-md-3 col-sm-6 col-padding text-center animate-box">
+							<h2 style="font-size: 25px; text-align: center; margin-top:-5%;"> Accumulation of Different Expenses Over Time </h2>
+							<img src="images/income_and_expenses_graphs/expensesAccumulationLineGraphOverTime.png" alt="line chart of accumulation of different expenses over time"
+							style="height:280px;">
 						</div>
 					</div>
 				</div>
 				<div class="row row-bottom-padded-md">
 					<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"> Overview </h2>
 					<div class="col-md-3 col-sm-6 col-padding text-center animate-box" id="OverviewContentDiv">
+						<div id="OverallStatisticsPiechart">
+							<img src="images/income_and_expenses_graphs/overallStatsPiechart.png" alt="piechart of overall expenses and earnings"
+							style="height:250px;margin-left:40px;">
+						</div>
 						<table id="OverviewTableContent">
 							<tr>
 								<th class="overviewSideColumn"> Total Earnings: </th>
