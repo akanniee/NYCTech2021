@@ -461,6 +461,12 @@ document.querySelector('.cont_form_login').style.display = "none";
   
   }
 
+function myFunction() {
+  alert("You have signed up successfully!");
+  location.replace("questionaire.html");
+}
+</script>
+
 
 
 
@@ -521,7 +527,7 @@ document.querySelector('.cont_form_login').style.display = "none";
 			<input type="text" placeholder="User" />
 			<input type="password" placeholder="Password" />
 			<input type="password" placeholder="Confirm Password" />
-			<button class="btn_sign_up" onclick="alert('You have signed up successfully!')">SIGN UP</button>
+			<button class="btn_sign_up" onclick="myFunction()">SIGN UP </button>
 			
 			  </div>
 			
