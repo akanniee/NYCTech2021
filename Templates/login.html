@@ -13,12 +13,12 @@
 	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FreeHTML5.co" />
 
-  	<!-- 
+  	<!--
 	//////////////////////////////////////////////////////
 
-	FREE HTML5 TEMPLATE 
+	FREE HTML5 TEMPLATE
 	DESIGNED & DEVELOPED by FreeHTML5.co
-		
+
 	Website: 		http://freehtml5.co/
 	Email: 			info@freehtml5.co
 	Twitter: 		http://twitter.com/fh5co
@@ -80,10 +80,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfd8dc', end
   width: 640px;
 left: 50%;
 margin-left: -200px;
-  
+
 }
 
-.cont_back_info {  
+.cont_back_info {
 position: relative;
   float: left;
   width: 640px;
@@ -111,7 +111,7 @@ transition: all 0.5s;
 
 .cont_forms_active_login {
 box-shadow: 1px 10px 30px -10px rgba(216, 214, 214, 0.5);
-  height: 480px;  
+  height: 480px;
 top:20px;
 left: 0px;
   -webkit-transition: all 0.5s;
@@ -124,7 +124,7 @@ transition: all 0.5s;
 
 .cont_forms_active_sign_up {
 box-shadow: 1px 10px 30px -10px rgba(212, 211, 211, 0.5);
-  height: 480px;  
+  height: 480px;
 top:20px;
 left:320px;
 -webkit-transition: all 0.5s;
@@ -171,7 +171,7 @@ animation-direction: alternate;
 }
 
 .cont_forms_active_login > .cont_img_back_ {
-top:0px;  
+top:0px;
   -webkit-transition: all 0.5s;
 -moz-transition: all 0.5s;
 -ms-transition: all 0.5s;
@@ -180,7 +180,7 @@ transition: all 0.5s;
 }
 
 .cont_forms_active_sign_up > .cont_img_back_ {
-top:0px;  
+top:0px;
 left: -435px;
   -webkit-transition: all 0.5s;
 -moz-transition: all 0.5s;
@@ -188,7 +188,7 @@ left: -435px;
 -o-transition: all 0.5s;
 transition: all 0.5s;
 }
- 
+
 
 .cont_info_log_sign_up {
 position: absolute;
@@ -196,7 +196,7 @@ position: absolute;
   height: 280px;
   top: 100px;
 z-index: 1;
-} 
+}
 
 .col_md_login {
   position: relative;
@@ -217,7 +217,7 @@ width: 80%;
     color: #e8ebec;
 }
 
-.btn_login { 
+.btn_login {
 background-color: #26C6DA;
   border: none;
   padding: 10px;
@@ -232,7 +232,7 @@ cursor: pointer;
 .col_md_sign_up {
   position: relative;
   float: left;
-  width: 50%;  
+  width: 50%;
 }
 
 .cont_ba_opcitiy > h2 {
@@ -246,7 +246,7 @@ margin-top: 15px;
  color: #fff;
 }
 /* ----------------------------------
-background text    
+background text
 ------------------------------------
  */
 .cont_ba_opcitiy {
@@ -258,7 +258,7 @@ margin-top: 60px;
 padding: 15px 0px;
 }
 
-.btn_sign_up { 
+.btn_sign_up {
 background-color: #ef5350;
   border: none;
   padding: 10px;
@@ -270,7 +270,7 @@ margin-top: 10px;
 cursor: pointer;
 }
 .cont_forms_active_sign_up {
-z-index: 2;  
+z-index: 2;
 }
 
 
@@ -337,7 +337,7 @@ transition: all 0.5s;
 }
 
 .cont_forms_active_login {
-z-index: 2;  
+z-index: 2;
 }
 .cont_forms_active_login  >.cont_form_login {
 }
@@ -355,7 +355,7 @@ display: none;
 transition: all 0.5s;
 }
 
-  
+
 .cont_form_sign_up > input {
 text-align: left;
   padding: 15px 5px;
@@ -367,7 +367,7 @@ border: none;
 }
 
 .cont_form_sign_up > h2 {
-margin-top: 50px; 
+margin-top: 50px;
 font-weight: 400;
   color: #ffffff;
 }
@@ -384,7 +384,7 @@ text-align: left;
 }
 
 .cont_form_login > h2 {
-margin-top: 110px; 
+margin-top: 110px;
 font-weight: 400;
   color: #ffffff;
 }
@@ -421,44 +421,44 @@ margin-left: 30px;
 */
 
 function cambiar_login() {
-  document.querySelector('.cont_forms').className = "cont_forms cont_forms_active_login";  
+  document.querySelector('.cont_forms').className = "cont_forms cont_forms_active_login";
 document.querySelector('.cont_form_login').style.display = "block";
-document.querySelector('.cont_form_sign_up').style.opacity = "0";               
+document.querySelector('.cont_form_sign_up').style.opacity = "0";
 
-setTimeout(function(){  document.querySelector('.cont_form_login').style.opacity = "1"; },400);  
-  
-setTimeout(function(){    
+setTimeout(function(){  document.querySelector('.cont_form_login').style.opacity = "1"; },400);
+
+setTimeout(function(){
 document.querySelector('.cont_form_sign_up').style.display = "none";
-},200);  
+},200);
   }
 
 function cambiar_sign_up(at) {
   document.querySelector('.cont_forms').className = "cont_forms cont_forms_active_sign_up";
   document.querySelector('.cont_form_sign_up').style.display = "block";
 document.querySelector('.cont_form_login').style.opacity = "0";
-  
+
 setTimeout(function(){  document.querySelector('.cont_form_sign_up').style.opacity = "1";
-},100);  
+},100);
 
 setTimeout(function(){   document.querySelector('.cont_form_login').style.display = "none";
-},400);  
+},400);
 
 
-}    
+}
 
 
 
 function ocultar_login_sign_up() {
 
-document.querySelector('.cont_forms').className = "cont_forms";  
-document.querySelector('.cont_form_sign_up').style.opacity = "0";               
-document.querySelector('.cont_form_login').style.opacity = "0"; 
+document.querySelector('.cont_forms').className = "cont_forms";
+document.querySelector('.cont_form_sign_up').style.opacity = "0";
+document.querySelector('.cont_form_login').style.opacity = "0";
 
 setTimeout(function(){
 document.querySelector('.cont_form_sign_up').style.display = "none";
 document.querySelector('.cont_form_login').style.display = "none";
-},500);  
-  
+},500);
+
   }
 
 function myFunction() {
@@ -472,41 +472,41 @@ function myFunction() {
 
 	</script>
 <body>
-	
+
 		<body>
-			
+
 			<div class="cotn_principal">
 			<div class="cont_centrar">
-			
+
 			  <div class="cont_login">
 			<div class="cont_info_log_sign_up">
 				  <div class="col_md_login">
 			<div class="cont_ba_opcitiy">
-					
-					<h2>LOGIN</h2>  
-			  <p><h4>Welcome Back!</h4></p> 
+
+					<h2>LOGIN</h2>
+			  <p><h4>Welcome Back!</h4></p>
 			  <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
 			  </div>
 			  </div>
 			<div class="col_md_sign_up">
 			<div class="cont_ba_opcitiy">
 			  <h2>SIGN UP</h2>
-			
-			  
+
+
 			  <p><h4>Hi! Please Join Us!</h4></p>
-			
+
 			  <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
-			  
+
 			</div>
 			  </div>
 				   </div>
-			
-				
+
+
 				<div class="cont_back_info">
 				   <div class="cont_img_back_grey">
 				   <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&q=50&fm=jpg&crop=entropy&s=7686972873678f32efaf2cd79671673d" alt="" />
 				   </div>
-				   
+
 				</div>
 			<div class="cont_forms" >
 				<div class="cont_img_back_">
@@ -519,7 +519,7 @@ function myFunction() {
 			<input type="password" placeholder="Password" />
 			<button class="btn_login" onclick="cambiar_login()">LOGIN</button>
 			  </div>
-			  
+
 			   <div class="cont_form_sign_up">
 			<a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
 				 <h2>SIGN UP</h2>
@@ -528,15 +528,15 @@ function myFunction() {
 			<input type="password" placeholder="Password" />
 			<input type="password" placeholder="Confirm Password" />
 			<button class="btn_sign_up" onclick="myFunction()">SIGN UP </button>
-			
+
 			  </div>
-			
+
 				</div>
-				
+
 			  </div>
 			 </div>
 			</div>
-			
+
 			<footer>
 <div id="fh5co-page">
 	<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
@@ -547,7 +547,7 @@ function myFunction() {
 			<ul>
 				<!-- <li><a href="home.html">Home</a></li> -->
 				<li class="fh5co-active"><a href="login.html">Login/Sign up</a></li>
-				<li><a href="overview.html">Overview</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
 				<li><a href="creditcards.html">Credit Card Information</a></li>
 				<li><a href="expenses_savings.html">Expenses and Savings</a></li>
 				<li><a href="goals.html">Goals</a></li>
@@ -555,39 +555,39 @@ function myFunction() {
 				<li><a href="loans.html">Loans</a></li>
 				<li><a href="education.html">Education</a></li>
 				<li><a href="faq.html">FAQ</a></li>
-				
+
 			</ul>
 		</nav>
 
 			<div class="fh5co-footer">
 				<p><small>&copy; 2016 Blend Free HTML5. All Rights Reserved.</span> <span>Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> </span> <span>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></span></small></p>
-				
+
 			</div>
 
 		</aside>
 
-		
-								
-								
-									
+
+
+
+
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			
+
 										>
 									</div>
 								</div>
-								
+
 							</div>
 						</div>
-						
+
 					</div>
 				</form>
 			</div>
-			<div ></div>	
+			<div ></div>
 		</div>
 	</div>
 
@@ -604,11 +604,10 @@ function myFunction() {
 	<!-- Google Map -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
 	<script src="js/google_map.js"></script>
-	
-	
+
+
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
 
 	</body>
 </html>
-
